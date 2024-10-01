@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap');
+
+
+:root {
+    --brand-color: #1E8E6A;
+    --dark-10: #1A202C;
+    --dark-20: #4A5568;
+    --dark-30: #A0AEC0;
+    --dark-40: #E2E8F0;
+    --dark-50: #FFFFFF;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', sans-serif;
+    background-color: var(--dark-50);
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+.hero-section {
+    width: 50%; 
+    background-color: #E6FFFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    width: 80%; 
+}
+
+
+.login-section {
+    width: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+   width: 400px;
+   height: 528px;
+   display: flex;
+   flex-direction: column;
+}
+
+.login-form h2 {
+   font-weight: 600;
+   font-size: 32px;
+   line-height: 34.82px;
+}
+
+.login-form p {
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 21.76px;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid var(--dark-40);
+    border-radius: 5px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me label {
+    margin-left: 5px;
+}
+
+.forgot-password {
+    font-size: 12px;
+    color: var(--brand-color);
+}
+
+/* Botões */
+.login-button {
+    background-color: var(--brand-color);
+    color: var(--dark-50);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.google-button {
+    background-color: #000;
+    color: var(--dark-50);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup-option {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup-option a {
+    color: var(--brand-color);
+}

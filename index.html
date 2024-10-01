@@ -1,13 +1,46 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/scripts/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <link rel="stylesheet" href="./src/assets/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+       
+        <div class="hero-section">
+            <img src="./src/assets/images/imagem.svg" alt="Imagem ilustrativa" class="hero-image">
+        </div>
+
+        <div class="login-section">
+            <form class="login-form">
+                <p>Bem-vindo de volta</p>
+                <h2>Faça login na sua conta</h2>
+                
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="exemplo@gmail.com" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="123456789" required>
+
+                <div class="options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Lembrar de mim</label>
+                    </div>
+                    <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+                </div>
+
+                <button type="submit" class="login-button">Entrar na conta</button>
+                <button class="google-button">Ou faça login com o Google</button>
+
+                <div class="signup-option">
+                    Não tem uma conta? <a href="#">Cadastre-se</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
 </html>
