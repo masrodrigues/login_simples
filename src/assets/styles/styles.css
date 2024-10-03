@@ -214,4 +214,17 @@ input[type="email"] {
     text-decoration: none;
 }
 
+/* Media Query para Tablet */
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-section {
+        display: none; /* Oculta a seção hero */
+    }
+
+}
 
