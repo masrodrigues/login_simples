@@ -1,129 +1,217 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --brand-color: #1E8E6A;
     --dark-10: #1A202C;
-    --dark-20: #4A5568;
-    --dark-30: #A0AEC0;
-    --dark-40: #E2E8F0;
+    --dark-20: #656769;
+    --dark-30: #E8E8E8;
+    --dark-40: #F7FAFC;
     --dark-50: #FFFFFF;
 }
-
 
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Archivo', sans-serif;
     background-color: var(--dark-50);
+    box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 
 .container {
     display: flex;
     height: 100vh;
 }
 
-
 .hero-section {
-    width: 50%; 
-    background-color: #E6FFFA;
+    width: 50%;
+    background-color: #F3FFF2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .hero-image {
-    width: 80%; 
+    width: 500px;
 }
 
-
 .login-section {
-    width: 50%; 
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .login-form {
-   width: 400px;
-   height: 528px;
-   display: flex;
-   flex-direction: column;
+    width: 400px;
+    height: 528px;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Títulos e Textos */
 .login-form h2 {
-   font-weight: 600;
-   font-size: 32px;
-   line-height: 34.82px;
+    margin: 0; /* Remove as margens */
+    padding: 0;
+    margin-bottom: 40px; /* Remove qualquer padding */
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 34.82px;
+    color: var(--dark-10);
 }
 
 .login-form p {
-   font-weight: 500;
-   font-size: 20px;
-   line-height: 21.76px;
+    margin: 0; /* Remove as margens */
+    padding: 0;
+    margin-bottom: 12px; /* Remove qualquer padding */
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 21.76px;
+    color: var(--dark-10);
 }
 
+/* Formulário e Campos */
 label {
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 18px;
+    line-height: 19.58px;
+    font-weight: 400;
 }
 
-input[type="email"], input[type="password"] {
+input[type="email"] {
+    width: 100%; 
+    height: 49px; 
+    font-size: 16px;
+    line-height: 17.41px;
+    background-color: var(--dark-40);
+    border: 1px solid var(--dark-30);
+    border-radius: 4px;
+    padding: 16px;
+    margin-top: 12px;
+    margin-bottom: 16px; 
+    box-sizing: border-box;
+}
+
+ input[type="password"] {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    border: 1px solid var(--dark-40);
-    border-radius: 5px;
-}
+    height: 49px;   
+    font-size: 16px;
+    line-height: 17.41px;
+    background-color: var(--dark-40);
+    border: 1px solid var(--dark-30);
+    border-radius: 4px;
+    padding: 16px;
+    margin-top: 12px;
+    box-sizing: border-box; 
+ }
 
+/* Opções de Login */
 .options {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    margin-top: 24px;
+    margin-bottom: 56px;
+}
+
+.options a {
+    color: var(--brand-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17.41px;
+    text-align: end;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #E8E8E8;
+    border-radius: 50%;
+    cursor: pointer;
+    appearance: none;
+    outline: none;
+    background-color: #F7FAFC;
+}
+
+.checkbox:checked {
+    background-color: var(--brand-color);
+    border: none;
 }
 
 .remember-me {
     display: flex;
     align-items: center;
+    gap: 8px;
 }
 
 .remember-me label {
-    margin-left: 5px;
+    font-size: 16px;
+    line-height: 17.41px;
+    font-weight: 600;
+    color: var(--dark-10);
 }
 
 .forgot-password {
-    font-size: 12px;
-    color: var(--brand-color);
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.forgot-password:hover {
+    color: var(--dark-20);
 }
 
 /* Botões */
+.login-button, .google-button {
+    width: 100%; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 16px 32px 16px 32px ;
+    box-sizing: border-box;
+}
+
 .login-button {
     background-color: var(--brand-color);
     color: var(--dark-50);
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19.58px;
+    margin-bottom: 24px;
 }
 
 .google-button {
-    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-10);
     color: var(--dark-50);
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    font-size: 18px;
+    line-height: 19.58px;
+    font-weight: 600;
 }
 
+.google-button .google-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Opção de Cadastro */
 .signup-option {
-    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-10);
     text-align: center;
+    margin-top: 64px;
 }
 
 .signup-option a {
+    font-size: 20px;
+    font-weight: 600;
     color: var(--brand-color);
+    text-decoration: none;
 }
+
+

@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Login</title>
     <link rel="stylesheet" href="./src/assets/styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <body>
     <div class="container">
-       
+        <!-- Área da imagem à esquerda -->
         <div class="hero-section">
             <img src="./src/assets/images/imagem.svg" alt="Imagem ilustrativa" class="hero-image">
         </div>
 
+        <!-- Área de login à direita -->
         <div class="login-section">
             <form class="login-form">
                 <p>Bem-vindo de volta</p>
@@ -26,15 +28,19 @@
                 <input type="password" id="senha" placeholder="123456789" required>
 
                 <div class="options">
-                    <div class="remember-me">
-                        <input type="checkbox" id="remember">
-                        <label for="remember">Lembrar de mim</label>
-                    </div>
+                    <label class="remember-me">
+                    <input type="checkbox" class="checkbox" id="remember"/>
+                    Lembre de mim
+                    </label>
                     <a href="#" class="forgot-password">Esqueceu sua senha?</a>
                 </div>
 
                 <button type="submit" class="login-button">Entrar na conta</button>
-                <button class="google-button">Ou faça login com o Google</button>
+
+                <!-- Botão com ícone do Google -->
+                <button type="button" class="google-button">
+                    <img src="./src/assets/images/icon.png" alt="Ícone do Google" class="google-icon"> Ou faça login com o Google
+                </button>
 
                 <div class="signup-option">
                     Não tem uma conta? <a href="#">Cadastre-se</a>
