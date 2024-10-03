@@ -223,8 +223,76 @@ input[type="email"] {
     }
 
     .hero-section {
-        display: none; /* Oculta a seção hero */
+        display: none; 
     }
 
 }
 
+/* Media Query para Mobile */
+@media (max-width: 375px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:24px;
+        
+    }
+
+    .hero-section {
+        display: none; 
+    }
+
+    .login-section {
+        width: 100%;
+        justify-content: center;
+       
+    }
+
+    .login-form {
+        width: 100%; 
+       
+        
+    }
+
+    .login-form h2 {
+        font-size: 24px; 
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        line-height: 26.11px;
+        margin-top: 8px;
+        margin-bottom: 40px;
+    }
+
+    .login-form p, label, .options a, .checkbox, .remember-me label{
+        font-size: 14px; 
+        margin:0;
+        padding: 0;
+        font-size: 14px;
+        line-height: 15.23px;
+    }
+
+    .login-form imput{
+        font-size: 16px; 
+        line-height: 17.41px;
+    }
+    
+
+    .login-button, .google-button {
+        font-size: 16px; 
+        padding: 14px 32px 14px 32px;
+        gap:12px;
+        
+    }
+    .google-button img {
+        width: 16px;
+        height: 16px;
+        
+    }
+    .signup-option, .signup-option a {
+        font-size: 16px; 
+        margin-top: 32px;
+        line-height: 17,41px;
+        margin-top: 64px;
+    }
+}
