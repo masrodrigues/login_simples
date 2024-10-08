@@ -16,9 +16,13 @@ Este é um projeto de tela de login simples desenvolvido com Vite, com deploy re
 O layout foi implementado para três tipos de visualizações:
 
 1. **Desktop:** Layout padrão com a tela dividida entre a imagem ilustrativa e o formulário de login.
+![2024-10-01_11h33_53](https://github.com/user-attachments/assets/0a909a18-5867-4118-b91d-cfaf10293aa6)
 
 2. **Tablet (768px x 1024px):** Mantém apenas o formulário de login centralizado e oculta a seção com a imagem.
+![2024-10-01_19h49_02](https://github.com/user-attachments/assets/93b46267-0ae5-4b27-84c8-3870861ef630)
+
 3. **Mobile (375px x 812px):** Exibe o formulário de login de maneira compacta e responsiva.
+![2024-10-03_10h23_47](https://github.com/user-attachments/assets/e0d90ed4-d532-4ef3-b2b0-7a95c6486575)
 
 ## Estrutura de Arquivos
 
